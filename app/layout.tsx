@@ -8,20 +8,14 @@ import { ConvexClientProvider } from "@/components/providers/convex-provider";
 
 
 export const metadata: Metadata = {
-  title: "iNote",
+  title: "Homesik",
   description:
-    "iNote features a minimalist design that focuses on simplicity and functionality, providing a distraction-free note-taking environment.",
+    "If you're a property owner, you can list your properties for sale or rent and connect with your potential tenants or buyers. If you're a tenant, you can find your perfect home or rental property with ease, and connect with your property owners.",
   icons: {
     icon: [
       {
-        media: "(prefers-color-scheme: light)",
         url: "/logo.svg",
         href: "/logo.svg",
-      },
-      {
-        media: "(prefers-color-scheme: dark)",
-        url: "/logo-dark.svg",
-        href: "/logo-dark.svg",
       },
     ],
   },
