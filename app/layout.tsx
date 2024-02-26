@@ -1,11 +1,9 @@
 import "./globals.css";
 import type { Metadata } from "next";
 
-import { Toaster } from "sonner";
+import { Toaster } from "@/components/ui/toaster"
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { ConvexClientProvider } from "@/components/providers/convex-provider";
-
-
 
 export const metadata: Metadata = {
   title: "Homesik",
@@ -30,16 +28,16 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body>
         <ConvexClientProvider>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-            storageKey="homesik-theme"
-          >
-            {children}
-            <Toaster />
-          </ThemeProvider>
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+              storageKey="homesik-theme"
+            >
+              {children}
+              <Toaster />
+            </ThemeProvider>
         </ConvexClientProvider>
       </body>
     </html>

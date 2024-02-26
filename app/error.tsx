@@ -30,11 +30,11 @@ export default function GlobalError ({ error, reset }: ErrorProps) {
             {error.message}
           </p>
           <div className="flex items-center justify-center mt-6 gap-x-3">
-            <button className="flex items-center justify-center w-1/2 px-5 py-2 text-sm text-stone-700 transition-colors duration-200 bg-white border rounded-lg gap-x-2 sm:w-auto dark:hover:bg-stone-800 dark:bg-stone-900 hover:bg-stone-100 dark:text-stone-200 dark:border-stone-700" onClick={handleBack}>
-              <ArrowLeft className="w-4 h-4 mr-2" />
+            <button className="flex items-center justify-center w-1/2 px-3 py-2 text-sm text-stone-700 transition-colors duration-200 bg-white border rounded-lg gap-x-2 sm:w-auto dark:hover:bg-stone-800 dark:bg-stone-900 hover:bg-stone-100 dark:text-stone-200 dark:border-stone-700" onClick={handleBack}>
+              <ArrowLeft className="w-4 h-4 " />
               <span>Go back</span>
             </button>
-            <button className="w-1/2 px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 bg-primary-colo rounded-lg shrink-0 sm:w-auto hover:bg-primary-color/70 dark:hover:bg-primary-color/60 dark:bg-primary-color/70" onClick={reset} >
+            <button className="w-1/2 px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 bg-primary-color rounded-lg shrink-0 sm:w-auto hover:bg-primary-color/70 dark:hover:bg-primary-color/60 dark:bg-primary-color/70" onClick={reset} >
                 Reset  
             </button>
           </div>

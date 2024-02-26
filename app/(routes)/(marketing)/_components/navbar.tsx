@@ -32,24 +32,19 @@ export const Navbar = () => {
   } else {
     return (
       <div className={cn("z-50 fixed top-0 bg-light-color dark:bg-dark-color flex items-center w-full py-6 px-12", scrolled && "border-b shadow-lg")}>
-        <Logo withText/>
+        <Logo withText />
         <div className="ml-auto justify-end w-full flex items-center gap-x-4">
           {!isAuthenticated ? (
             <>
               <SignInButton mode="modal">
-                <button className='relative inline-flex h-12 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-1 focus:ring-stone-400 focus:ring-offset-2 focus:ring-offset-stone-50 transform hover:-translate-y-1 transition duration-400'>
-                  <span className='absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#c084fc_0%,#2266cc_50%,#818cf8_100%)]' />
-                  <span className='inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full px-6 py-1 bg-white dark:bg-[#1e1e1e] dark:text-white text-sm font-medium backdrop-blur-3xl'>
-                    Sign In
-                  </span>
-                </button>
+                <button className="px-5 py-2 text-sm text-light-color rounded-full bg-primary-color hover:bg-primary-color/90 transform hover:-translate-y-1 transition duration-400" >Sign In</button>
               </SignInButton>
             </>
           ) : (
             <>
               <Button variant="ghost" size="sm" className="transform hover:-translate-y-1 transition duration-400" asChild>
                 <Link href="/create-account">
-                  Start Moving
+                  Start Exploring
                 </Link>
               </Button>
               <UserButton afterSignOutUrl="/" />

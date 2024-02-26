@@ -1,6 +1,9 @@
-import type { Config } from "tailwindcss";
+/** @type {import('tailwindcss').Config} */
+const { withUt } = require("uploadthing/tw");
+const colors = require("tailwindcss/colors");
+const defaultTheme = require("tailwindcss/defaultTheme");
 
-const config = {
+module.exports = withUt({
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
@@ -83,21 +86,11 @@ const config = {
         "border-width": {
           from: {
             width: "10px",
-            opacity: "0"
+            opacity: "0",
           },
           to: {
             width: "100px",
-            opacity: "1"
-          }
-        },
-        "spotlight": {
-          from: {
-            opacity: "0",
-            transform: "translate(-72%, -62%) scale(0.5)",
-          },
-          to: {
             opacity: "1",
-            transform: "translate(-50%,-40%) scale(1)",
           },
         },
       },
@@ -106,11 +99,8 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "background-shine": "background-shine 2s linear infinite",
         "border-width": "border-width 3s infinite alternate",
-        "spotlight": "spotlight 2s ease .75s 1 forwards",
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config;
-
-export default config;
+});

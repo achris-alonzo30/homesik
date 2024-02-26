@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, span, button, label, input {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 @layer base {
