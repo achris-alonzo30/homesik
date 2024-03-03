@@ -17,7 +17,7 @@ export const Navbar = () => {
 
   if (isLoading) {
     return (
-      <div className="z-50 fixed top-0 flex items-center w-full p-6">
+      <div className="z-50 fixed top-0 flex items-center w-full h-12">
         <div className="flex items-center gap-x-2">
           <Skeleton className="h-8 w-8 rounded-full bg-stone-300 dark:bg-stone-500" />
           <Skeleton className="h-8 w-24 rounded-md bg-stone-300 dark:bg-stone-500" />
@@ -31,7 +31,7 @@ export const Navbar = () => {
     )
   } else {
     return (
-      <div className={cn("z-50 fixed top-0 bg-light-color dark:bg-dark-color flex items-center w-full py-6 px-12", scrolled && "border-b shadow-lg")}>
+      <div className={cn("z-50 fixed top-0 bg-light-color dark:bg-dark-color flex items-center w-full h-14 px-4 sm:px-12", scrolled && "border-b shadow-lg")}>
         <Logo withText />
         <div className="ml-auto justify-end w-full flex items-center gap-x-4">
           {!isAuthenticated ? (

@@ -16,7 +16,7 @@ const CreateAccountPage = () => {
 
     useEffect(() => {
         if (account?.role === "sellers") {
-            router.push(`/s/${account?._id}`);
+            router.push(`/s/${account?._id}/dashboard`);
         } else if (account?.role === "buyers") {
             router.push(`/b/${account?._id}`);
         }

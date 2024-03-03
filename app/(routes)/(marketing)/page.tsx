@@ -6,6 +6,7 @@ import { ShuffleHero } from "./_components/shuffle-hero";
 
 
 const MarketingPage = () => {
+
   return (
     <div className="flex flex-col flex-1 h-full bg-light-color dark:bg-dark-color">
       <Navbar />
